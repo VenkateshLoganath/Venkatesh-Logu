@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+*{
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(76, 11, 106, 0.507);;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height:100vh;
+}
+.container{
+ 
+  width:400px;
+  background-color: #fff;;
+  padding:60px 40px;
+  border-radius: 4px;;
+}
+.search-box{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputval{
+  width:70%;
+  height:30px;
+  border:none;
+  border-bottom: 1px solid rgba(104, 28, 139, 0.543);
+  padding-left: 5px;;
+  outline:none;
+  color:rgba(70, 69, 69, 0.712)
+}
+ 
+ 
+.search-btn{
+  width:25%;
+  background-color: rgba(76, 11, 106, 0.507);;
+  border:none;
+  outline:none;
+  padding:5px;
+  border-radius: 4px;;
+  color:#fff;
+  cursor: pointer;
+}
+.words{
+  display: flex;
+
+  justify-content: space-between;
+   
+}
+.words h5{
+  font-size:20px;font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 5px;;
+  margin-top:40px;
+}
+.words button{
+    background-color: #fff;;
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+   
+.words button i{
+    font-size: 15px;
+    color:rgba(76, 11, 106, 0.507);;
+}
+.ex-words{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  color:rgba(7, 7, 7, 0.262);;
+  font-size:13px;
+
+}
+.ex-words .pos{
+  margin-right:5px;
+}
+.ex-words p{
+  margin:0;
+}
+
+.wordsoutput{
+  font-size: 14px;;
+}
+
+.wordsous{
+  border-left:5px solid rgba(76, 11, 106, 0.507);
+  padding-left: 15px;;
+}

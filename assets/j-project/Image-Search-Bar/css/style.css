@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:80px 0px;
+    flex-direction: column;
+
+}
+
+.form-section h1{
+    margin-bottom: 30px;
+}
+ 
+
+.form-section form input{
+        height:40px;
+        width:250px;
+        padding : 0px 20px;;
+        font-size: 15px;
+        border :2px solid transparent;
+        outline:none;
+        background-color: rgb(9, 138, 138);
+        color:#ffffffe5;
+        border-radius: 4px;
+}
+.form-section form input::placeholder{
+ 
+    color:#ffffff8f;
+ 
+}
+
+.form-section form button{
+    height:40px;
+ 
+    padding : 0px 20px;;
+    font-size: 15px;
+    border :2px solid transparent;
+    outline:none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    color:#ffffffde;
+    cursor: pointer;
+}
+
+
+.search-products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.search-product{
+     margin-bottom: 30px;
+     width: 30%;
+     height:100%;
+     overflow: hidden;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+     border-radius: 4px;
+}
+
+
+.search-product img{
+ height: 230px; 
+ width:100%;
+ object-fit: cover;
+ transition: opacity 0.2s ease-in-out;
+}
+.search-product:hover img{
+   opacity: 0.9;
+   }
+.search-product a{
+    text-decoration: none;
+    color:rgb(0, 119, 119);
+    text-align: center;
+    display: block;
+    line-height: 25.5px;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.show-more-btn{
+    margin:30px auto;
+    display: block;
+    padding:10px 20px;
+    background-color: rgb(5, 66, 66);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color:#ffffffb2;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:760px) {
+    .search-product{
+      
+        width: 45%;
+        
+   }
+   .search-products{
+    padding:20px;
+}   
+}
+
+@media screen and (max-width:600px) {
+    .search-product{
+      
+        width: 100%;
+        
+   }
+   .search-products{
+    padding:20px;
+}
+}
+@media screen and (max-width:460px) {
+    .search-product{
+      
+        width: 100%;
+        
+   }
+   .search-products{
+         padding:20px;
+    }
+}
+
+
+
+@media screen and (max-width:350px) {
+
+    .form-section{    
+        margin:30px 0px;
+    }
+    .form-section form input{
+        height:40px;
+        width:150px;
+        padding : 0px 20px;;
+        font-size: 15px;
+        border :2px solid transparent;
+        outline:none;
+        background-color: rgb(9, 138, 138);
+        color:#ffffffe5;
+        border-radius: 4px;
+}
+ 
+
+.form-section form button{
+    height:40px;
+ 
+    padding : 0px 10px;;
+    font-size: 15px;
+    border :2px solid transparent;
+    outline:none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    color:#ffffffde;
+    cursor: pointer;
+}
+}

@@ -1,0 +1,144 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(/img/bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;  /* fallback for old browsers */font-family: 'Barriecito', cursive;
+   
+}
+
+ 
+
+.container{
+    background-color:  #00000069;
+    border-radius: 5px;
+    max-width:400px;
+    height:420px;
+    width:100%;
+    padding:20px;position:relative;
+}
+.container .text-content{
+    display: flex;
+    height:45px;
+    width:100%;font-family: 'Barriecito', cursive;
+   
+    
+}
+.header{
+    text-align: center;
+    margin-bottom:10px;
+    color:#fff;font-size:20px;
+    letter-spacing: 4px;font-family: 'Barriecito', cursive;
+}
+.container input{
+    width:85%;
+    outline:none;
+    margin:0;
+    padding-left:10px;
+    font-size:15px;
+    border:none;
+    border-radius:5px 0px 0px 5px; font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+     
+}
+.container .userBtn{
+    width:15%;
+    cursor:pointer;
+    margin:0;
+    outline:none;
+    border-radius:0px 5px 5px 0px;
+    border:none;
+        margin-left:2px;
+    background-color: #dd1818;
+    color:#fff;
+    opacity: 0.6;
+    pointer-events: none;
+    font-size: 25px;
+}
+.container button.active{
+    opacity:1;
+    pointer-events: auto;
+}
+.class-list{
+    max-height:250px;
+    overflow-y: auto;
+} 
+ 
+.class-list li{
+    margin-top:15px;
+     list-style: none;
+     height:40px;
+     position:relative;
+     background-color:#d7faf6a1;
+     margin-bottom:5px;
+     line-height: 40px;
+    padding-left:10px;
+    font-family: 'Caveat', cursive;
+    cursor:pointer;
+    font-size: 15px !important;
+    text-transform: uppercase;
+    border-radius:2px 5px 5px 2Px;    overflow: hidden;     
+
+}
+.class-list li span{
+     position:absolute;
+     right:-45px;
+     color:#fff;
+     background-color:#dd1818;   font-size: 15px !important;
+     height:40px;
+     width:40px;
+     text-align: center;
+     border-radius:0px 5px 5px 0px;
+}
+.class-list li:hover span{
+    right:0;   
+     transition: all 0.5s ease;
+}
+  .footer{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Prompt', sans-serif;
+    position:absolute;
+    bottom:15px;
+    max-width: 360px;font-family: 'Barriecito', cursive;
+ 
+}
+.footer button{
+   background-color: #dd1818;
+   color:#fff;
+   border:none;
+   outline:none;
+   padding:6px 10px;
+   width:80px;
+   border-radius: 5px;
+   cursor:pointer;
+   opacity: 0.6;font-family: 'Barriecito', cursive;
+    pointer-events: none;
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pendinglist{
+    color:Red;
+    font-size:18px;
+    background-color:#000 ;
+    padding:2px 8px;
+    border-radius:5px;
+}

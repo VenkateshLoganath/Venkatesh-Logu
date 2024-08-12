@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex-direction: column;
+}
+
+.container .header{
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 50px;;
+    color:rgb(116, 190, 4)
+}
+
+.clock{
+    height:250px;
+    width: 250px;
+    position: relative;
+}
+.clock .numbers{
+    background-color: rgba(126, 224, 13, 0.678);
+    height: 100%;
+    width:100%;
+    border-radius: 20%;
+    border: 4px dotted #fff;
+}
+.clock .numbers .number{
+    position: absolute;
+}
+.clock .numbers .number.top{
+    
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    right: 110px;
+    font-size: 30px;
+    color: #fff;
+}
+.clock .numbers .number.down{
+    
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    right: 110px;
+    font-size: 30px;
+    color: #fff;
+}
+.clock .numbers .number.left{
+    
+    position: absolute;
+    top: 43%;
+    font-weight: bold;
+    left: 15px;
+    font-size: 30px;
+    color: #fff;
+}
+.clock .numbers .number.right{
+    
+    position: absolute;
+    top: 43%;
+    font-weight: bold;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.circle{
+    height:10px;
+    width:10px;
+    background-color: #fff;
+    position: absolute;
+    right:118px;
+    top:48%;
+}
+
+.clock-hour{
+    width: 63px;
+    background: #ffffff;
+    height: 5px;
+    position: absolute;
+    top: 49%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    right: 123px;
+}
+.clock-min{
+    width: 80px;
+    background: #ffffff;
+    height: 3px;
+    position: absolute;
+    top: 49%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    right: 123px;
+}
+.clock-sec{
+    width: 70px;
+    background: #ffffff;
+    height: 2px;
+    position: absolute;
+    top: 49%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    right: 123px;
+}

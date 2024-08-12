@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#fff ;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 5px;;
+    color:#fff;
+    height:550px;
+    width:1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    margin:15px 100px;
+}
+
+.userName-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.userName-section .form-container{
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    width:390px;
+  
+    margin-bottom: 10px;
+}
+.userName-section input{
+    width:100%;
+ }
+.email-section{
+    display: flex;
+ 
+ 
+    margin-bottom: 5px;;
+}
+.email-section .form-container{
+    height:100px;
+    width:910px;
+    max-width: 910px;
+}
+.email-section input{
+   width:100%;
+}
+
+.Password-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.Password-section .form-container{
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    width:390px;
+ 
+    margin-bottom: 10px;position: relative;
+}
+.Password-section input{
+    width:100%;
+ }
+.form-container label{
+    margin-bottom:10px;
+    color:#020202;
+}
+.form-container input{
+    height: 40px;
+    padding-left:10px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 2px;;
+    display: block;
+    margin-bottom: 3px;
+    transition: all .2s ease;
+    
+}
+
+.form-container input:focus{
+    outline: 1px solid skyblue;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-container.error input{
+    border:1px solid rgba(252, 27, 27, 0.918);box-shadow: rgba(255, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+}
+.form-container.success input{
+    border:1px solid #00c28a;box-shadow: rgba(17, 201, 0, 0.24) 0px 3px 8px;
+}
+.Sign-Up{
+    padding:13px;
+    cursor: pointer;
+    width:130px;
+    background-color: #00c28a;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:4px;
+    transition: all 0.3s ease-in-out;
+ 
+}
+ 
+.Sign-Up:hover{
+    background-color: #008a63;
+}
+.form-container.error .error{
+    color:#ff0000;
+    
+    
+     
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+ 
+     
+}
+.header img{
+ 
+    height:100px;
+    width:300px;
+}
+
+.form-container{
+    
+}
+  .eye-icon {
+    position: absolute;
+    top:50%;right:15px;
+    transform: translateY(-50%);
+   }
+   
+
+.eye-icon i{
+    cursor: pointer;
+    color:#79747494;
+}
+
+.eye-icons {
+    position: absolute;
+    top:50%;right:15px;
+    transform: translateY(-50%);
+   }
+   
+
+.eye-icons i{
+    cursor: pointer;
+     color:#79747498;
+}
+
+
+
+ @media (max-width:760px){
+  
+ 
+ 
+ 
+    .wrapper{
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.116);
+        border-radius: 5px;;
+        color:#fff;
+        height:900px;
+        width:800px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        margin-top: 130px 
+    }
+    .form-section{
+        
+        margin:15px 100px;
+    }
+ 
+    .userName-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .userName-section .form-container{
+       
+        height:100px;
+        width:600px;
+         
+        
+    }
+    .userName-section  input{
+        width:100%;
+     }
+ 
+    .email-section .form-container{
+        height:100px;
+        width:600px;
+         
+    }
+    .Password-section{
+        display: flex;
+        flex-direction: column;
+        
+     
+    }
+    .Password-section .form-container{
+        height:100px;
+        width:600px;
+         
+    }
+    .Password-section  input{
+        width:100%;
+     }
+     
+}
+
+@media (max-width:550px){
+    .wrapper{
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.116);
+        border-radius: 5px;;
+        color:#fff;
+        height:900px;
+        width:800px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .form-section{
+        display: flex;
+        flex-direction: column;
+        margin:15px 200px;
+    }
+    .userName-section .form-container{
+       
+        height:100px;
+        width:400px;
+        
+        
+    }
+    .Password-section .form-container{
+        height:100px;
+        width:400px;
+         
+    }
+    
+@media (max-width:400px){
+    
+    .wrapper{
+        margin-top: 300px;
+        background-color: rgba(0, 0, 0, 0.116);
+        border-radius: 5px;;
+        color:#fff;
+        height:900px;
+        width:800px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .form-section{
+        display: flex;
+        flex-direction: column;
+        margin:15px 250px;
+    }
+    .userName-section .form-container{
+       
+        height:100px;
+        width:300px;
+        
+        
+    }
+    .Password-section .form-container{
+        height:100px;
+        width:300px;
+         
+    }
+    .form-container label{
+        margin-bottom:10px;
+         color: #00c28a;
+    }
+}
+}

@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+height:100vh;
+background-color: #f0e000;
+background-image: url(/assets/j-project/JS-Calculator--main/img/calculator.jpg);
+background-size: cover;
+background-position:center;
+background-repeat: no-repeat;
+
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:100vh;
+    margin: 0px 200px;
+ 
+}
+
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.459);
+    height:450px;
+    width:320px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 5px;
+}
+.screen-section form{
+    height:150px;   
+}
+form .screen{
+    height:100%;
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:40px;
+    font-weight: bold;
+     padding:1rem;
+    text-align: right; border-radius:5px 5px 0px   0px ;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.116);
+    color:#fff;
+    border-bottom: 2px solid #00000071;
+ 
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+.btn{
+    flex: 0 0 22%;
+    margin:5px 0;
+    height:40px;
+    width:40px;
+    border: 2px solid transparent;
+    font-size:20px;
+    border-radius: 3px;
+    cursor:pointer;
+ 
+}
+
+.button-equal{
+    height:40px;
+    width:60px  ;
+    border: 2px solid transparent;
+    margin:5px 0; border-radius: 3px;
+    color:#fff;
+    font-size: 20px;   cursor:pointer;   background-color: rgba(0, 0, 0, 0.425);
+}
+.button-black{
+    background-color: rgba(0, 0, 0, 0.425);
+    color:#fff;
+}
+.button-clear,.button-ce{
+    height:40px;
+    width:100px  ;
+    border: 2px solid transparent;
+    margin:5px 0; border-radius: 3px;
+    font-size: 20px;   cursor:pointer;
+    
+}
+.button-clear{
+    background-color: rgba(0, 0, 0, 0.589); border: 2px solid transparent;
+    border-radius: 3px;
+    color:rgb(163, 6, 6);
+    font-weight: bold;
+}
+.button-ce{
+    background-color: rgba(0, 0, 0, 0.582); border: 2px solid transparent;
+    border-radius: 3px;
+    color:rgb(4, 192, 4);   font-weight: bold;
+}
+
+.button-gray{
+    background-color: rgba(0, 0, 0, 0.425);
+    color:#fff;
+
+}
+
+@media (max-width:800px){
+    .container{
+        
+        margin: 0px 100px;
+     
+    }
+}
+
+@media (max-width:550px){
+    .container{
+        display: flex;
+        justify-content: ce;
+        align-items: center;
+        height:100vh;
+        margin: 0px 200px;
+     
+    }
+    .container{
+        
+        margin: 0px 50px;
+     
+    }
+}
+@media (max-width:450px){
+    .container{
+        
+        margin: 0px;
+     
+    }
+    .button-clear,.button-ce{
+        height:40px;
+        width:80px  ;
+         
+        
+    }
+}
+
+@media (max-width:450px){
+    .container{
+        
+        margin: 0px;
+     
+    }
+    .button-clear,.button-ce{
+        height:40px;
+        width:80px  ;
+         
+        
+    }
+}

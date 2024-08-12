@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <audio src="/mp3/"  class="audio"></audio>
+    <div class="wrapper">
+        <div class="top-text">
+            <span class="songName">MP3</span>
+            <span class="artist-Name">Artist Name</span>
+           
+        </div>
+        <div class="m-img">
+
+        </div>
+        <div class="btn-bg">
+            <div class="range">
+                <input type="range" class="value">
+                <span class="current-time">00:00</span>
+                <span class="songduration">00:00</span>
+            </div>
+            <div class="btns">
+                <span class="backward"><i class="fa-solid fa-backward"></i></span>
+                <button class="play-pause  "><span class="pause"><i class="fa-solid fa-pause"></i></span><span class="play"><i class="fa-solid fa-play"></i></span></button>
+                <span class="forward"><i class="fa-solid fa-forward"></i></span>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
